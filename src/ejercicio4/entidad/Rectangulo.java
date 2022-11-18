@@ -28,13 +28,7 @@ public class Rectangulo {
         this.altura = altura;
     }
 
-    public int superficie() {
-        return base * altura;
-    }
 
-    public int perimetro() {
-        return (base + altura) * 2;
-    }
 
 
 }

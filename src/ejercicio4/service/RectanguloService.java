@@ -29,12 +29,16 @@ public class RectanguloService {
                 System.out.print("*");
             }
             System.out.println("");
+
         }
     }
-
-    public void mostraResultados(Rectangulo rectangulo) {
-        System.out.println("Perimetro: " + rectangulo.perimetro());
-        System.out.println("Superficie: " + rectangulo.superficie());
+    public int superficie(Rectangulo rectangulo) {
+        return rectangulo.getBase() * rectangulo.getAltura();
     }
+
+    public int perimetro(Rectangulo rectangulo) {
+        return (rectangulo.getBase() + rectangulo.getAltura()) * 2;
+    }
+
 
 }

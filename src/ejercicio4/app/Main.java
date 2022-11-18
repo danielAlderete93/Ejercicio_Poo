@@ -8,8 +8,11 @@ public class Main {
         RectanguloService rs = new RectanguloService();
         Rectangulo rectangulo = rs.creaRectangulo();
 
-        rs.mostraResultados(rectangulo);
+        System.out.println("Perimetro: "+rs.perimetro(rectangulo));
+        System.out.println("Superficie: "+rs.superficie(rectangulo));
+
         rs.dibujaRectangulo(rectangulo);
+
 
     }
 }
